@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { useState } from "react";
+import "./App.css";
+import { Hero } from "./components/Hero";
+import { About } from "./routes/About";
+import { Contact } from "./routes/Contact";
+import { Experience } from "./routes/Experience";
+import { Projects } from "./routes/Projects";
+import { Box, Container, Stack, Paper } from "@mui/material";
+import "./App.css";
+import { Nav } from "./components/Nav";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <Nav /> */}
+      <Box padding={2} backgroundColor="#5B2E48">
+        <Hero />
+        <Stack spacing={1}>
+          <Paper sx={{ backgroundColor: "#CD5C5C" }}>
+            <About />
+          </Paper>
+          <Paper sx={{ backgroundColor: "#CEB992" }}>
+            <Experience />
+          </Paper>
+          <Paper sx={{ backgroundColor: "#73937E" }}>
+            <Projects />
+          </Paper>
+          <Paper sx={{ backgroundColor: "#585563" }}>
+            <Contact />
+          </Paper>
+        </Stack>
+      </Box>
+    </>
   );
 }
 
