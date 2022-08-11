@@ -22,13 +22,10 @@ export const Experience = () => {
       <header>
         <h1>where I've worked</h1>
       </header>
-      <Stack spacing={0}>
+      <Stack spacing={2}>
         <Accordion
-          elevation={0}
           sx={{
-            border: "none",
-            outline: "none",
-            borderBottom: "1px solid #5B2E48",
+            border: "1px solid #585563",
           }}
           disableGutters={true}
         >
@@ -67,11 +64,8 @@ export const Experience = () => {
         {/* <Divider /> */}
         <Accordion
           sx={{
-            border: "none",
-            outline: "none",
-            borderBottom: "1px solid #5B2E48",
+            border: "1px solid #585563",
           }}
-          elevation={0}
           disableGutters={true}
         >
           <AccordionSummary
@@ -109,10 +103,8 @@ export const Experience = () => {
         </Accordion>
         <Accordion
           sx={{
-            border: "none",
-            outline: "none",
+            border: "1px solid #585563",
           }}
-          elevation={0}
           disableGutters={true}
         >
           <AccordionSummary
@@ -139,7 +131,7 @@ export const Experience = () => {
                   fontWeight: "900",
                 }}
               >
-                🚨 9-1-1 Dispatch
+                Pre-tech
               </div>
             </div>
           </AccordionSummary>
