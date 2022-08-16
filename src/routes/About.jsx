@@ -7,7 +7,7 @@ export const About = () => {
         <h1>who I am</h1>
       </header>
       <Card>
-        <Typography>
+        <Typography variant="body1">
           In my free time I enjoy coding full-stack web applications. I
           regularly work with React, Node.js, SQL and NoSQL Databases (mainly
           Postgres & MongoDB), REST & GraphQL APIs, and of course HTML & CSS.

@@ -8,7 +8,14 @@ import { About } from "./routes/About";
 import { Contact } from "./routes/Contact";
 import { Experience } from "./routes/Experience";
 
-const theme = createTheme({});
+const theme = createTheme({
+  typography: {
+    body1: {
+      fontFamily: "'Roboto Mono', sans-serif",
+    },
+    hero: {},
+  },
+});
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
